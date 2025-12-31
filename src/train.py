@@ -73,7 +73,7 @@ def main():
     parser.add_argument(
         "--batch_size",
         type=int,
-        default=2,
+        default=8,
         help="Batch size",
     )
     args = parser.parse_args()
@@ -180,7 +180,6 @@ def main():
 
     for epoch in range(start_epoch, end_epoch):
         print(50 * "=")
-        print(f"Epoch: {epoch}/{num_epochs}")
         model.train()
         epoch_loss = 0.0
         num_batches = 0
