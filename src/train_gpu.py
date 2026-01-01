@@ -327,5 +327,5 @@ def main():
 
 if __name__ == "__main__":
     # 新的训练命令：
-    # CUDA_VISIBLE_DEVICES=1,2,3 python src/train.py --batch_size 4
+    # CUDA_VISIBLE_DEVICES=1,2,3 python src/train_gpu.py --batch_size 4
     main()
